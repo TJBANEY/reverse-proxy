@@ -1,6 +1,3 @@
-# reverse-proxy
-Nginx reverse-proxy with caching and webhook triggered cache-invalidation
-
 # Reverse Proxy and Cache Invalidation System
 Nginx reverse-proxy with SSL termination, and a simple cache-invalidation system designed to automate cache invalidation by handling Webflow webhook requests triggered site_publish events
 
