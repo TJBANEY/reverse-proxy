@@ -1,8 +1,8 @@
-# Reverse Proxy and Cache Invalidation System
+# Reverse Proxy with Cache Invalidation
 Nginx reverse-proxy with SSL termination, and a simple cache-invalidation system designed to automate cache invalidation by handling Webflow webhook requests triggered site_publish events
 
 ### 1. Nginx Installation
-Install Nginx on your server. Nginx acts as the reverse-proxy, directing web traffic to the appropriate backend service.
+Install Nginx on your server. Nginx was the chosen reverse-proxy solution
 
 ```powershell
 sudo yum install nginx -y
@@ -55,7 +55,7 @@ nohup uvicorn main:app --host 0.0.0.0 --port 8000 &
 <br>
 
 ### 4. Nginx SSL Termination
-SSL termination is crucial for securing communications between clients and the reverse proxy. Here's a basic guide on setting up SSL termination with Nginx, using Certbot for SSL certificates:
+For HTTPS
 
 ```bash
 sudo yum install certbot python3-certbot-nginx
